@@ -26,3 +26,5 @@ During this early phase, focus on outlining and documenting your ideas, question
 
 IMPORTANT
 Remember that each team member, regardless of their role, needs to submit all the pieces of the deliverable for each segment.
+
+# The-Omniscient-Crypto-Oracle
