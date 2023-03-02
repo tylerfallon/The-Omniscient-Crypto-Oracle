@@ -1,6 +1,6 @@
 # The-Omniscient-Crypto-Oracle
 
-![Project Logo]()
+![Project Logo](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/images/TABD.png)
 
 ## Introduction
 
