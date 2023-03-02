@@ -1,5 +1,27 @@
 # The-Omniscient-Crypto-Oracle
 
+![Project Logo]()
+
+## Introduction
+
+The cryptocurrency market is a center of a lot of activity. It is a growing market with much potential and profit. Data science is used in cryptocurrency to forecast and predict the prices of these digital coins. This science is used to figure out what causes the changes in prices of the coins, and then indictaes whether the prices will increase or decrease in the future. By focusing on market capitalization, or the coins' worth, one will predict how well or poorly a cryptocurrency will perform. 
+
+In this project, TABD will be focusing on [NUMBER] different cryptocurrencies and their overall performance, specifically: BITCOIN, ..., ..., and ... After running parsed data into specific machine learning algorithms, our goal is obtain predictions whether one is safe to invest in these crypocurrencies or not. In addition, we will be able to determine which kind of crypto market the data falls under, whether is it a bull, bear, or neutral market.
+
+## Resources
+
+* Data Source: [Dataset1](), [Dataset2](), [Dataset3]()
+* Data Tools: [DataCleaning_preprocessingCode](.ipynb), [DatabaseSchema](.sql), [MachineLearningModel](.ipynb), [TableauDashboard]()
+* Software: Python (ver x), Visual Studio Code (ver x), Jupyter Notebook (ver x), Tableau (ver x), PostgresSQL (ver x)
+* Modules/Libraries: Pandas (ver x), Scikit Learn (ver x), TensorFlow (ver x), Matplotlib (ver x), Plotly (ver x)
+
+## **Take A Byte Data** - Team Members
+
+* Tyler Fallon
+* Aaron Horneman
+* Bobbi Colhour
+* David Oliver
+
 ## Deliverable 1
 
 ### Requirements for Segment 1
