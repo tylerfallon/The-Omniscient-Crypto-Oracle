@@ -1,0 +1,27 @@
+import cryptocompare as cc
+import datetime
+
+# Define the cryptocurrency and time window
+crypto_symbol = "BTC"
+end_time = datetime.datetime.now()
+start_time_3m = end_time - datetime.timedelta(days=90)
+start_time_6m = end_time - datetime.timedelta(days=180)
+
+# Retrieve the historical price data
+price_data = cc.get_historical_price_day(crypto_symbol, "USD", limit=2000, toTs=end_time.timestamp())
+
+# Extract the prices for the past 3 and 6 months
+prices_3m = [d["close"] for d in price_data if d["time"] >= start_time_3m.timestamp()]
+prices_6m = [d["close"] for d in price_data if d["time"] >= start_time_6m.timestamp()]
+
+# Calculate the price increase percentages
+pct_increase_3m = (prices_3m[-1] - prices_3m[0]) / prices_3m[0] * 100
+pct_increase_6m = (prices_6m[-1] - prices_6m[0]) / prices_6m[0] * 100
+
+# Check if the price has increased by the specified amounts
+if pct_increase_3m > 35 and pct_increase_6m > 100:
+    print(f"The {crypto_symbol} price has increased by {pct_increase_3m:.2f}% in the past 3 months and {pct_increase_6m:.2f}% in the past 6 months.")
+
+# Repeat the above steps for the asset in question by changing the crypto_symbol and price increase percentages as needed.
+
+
