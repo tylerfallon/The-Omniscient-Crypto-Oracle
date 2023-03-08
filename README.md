@@ -44,13 +44,20 @@ https://www.investopedia.com/
       - https://towardsdatascience.com/cryptocurrency-price-prediction-using-deep-learning-70cfca50dd3a
   
 #### Data Tools: (Put database link here)
-[DataCleaning_preprocessingCode](.ipynb), [DatabaseSchema](.sql), [MachineLearningModel](.ipynb), [TableauDashboard]()
+[DataCleaning_preprocessingCode](.ipynb)
+Daily Trending Code & Images link
+[DatabaseSchema](.sql), 
+[MachineLearningModel](.ipynb) 
+[TableauDashboard]()
 
 #### Software: 
 Python (ver x), Visual Studio Code (ver x), Jupyter Notebook (ver x), Tableau (ver x), PostgresSQL (ver x)
 
 #### Modules/Libraries: 
-Pandas (ver x), Scikit Learn (ver x), TensorFlow (ver x), Matplotlib (ver x), Plotly (ver x)
+Pandas (ver x), Scikit Learn (ver x), TensorFlow (ver x), Matplotlib (ver x), Plotly (ver x) , Python
+Keras, Long Short-Term Memory (LSTM) - (RNN model), Gated Recurrent Unit (GRU) - (RNN model), 
+Random Forests (RF) - used to compare, Stochastic Gradient Boosting Machine (SGBM) - used to compare,
+Scikit-learn Library - normalize data with MinMaxScaler(), evaluate using MAE (mean absolute error), confusion matrix, classification report
 
 ### The Process
 #### Topic
@@ -63,29 +70,30 @@ Are there any particular trends that may be relevant?
 
 #### Tasks Breakdown
 ##### Tyler
-Create New Repository
-Identify cryptos with 3 years history
-Define market type criteria
-Mock up dashboard
+- Create New Repository
+- Identify cryptos with 3 years history
+- Define market type criteria
+- Mock up dashboard
 
 ##### Aaron
-Clean data
-Create database w/ 2 tables
+- Cleaned all 5 set of data
+- Create database w/ 2 tables
 
 ##### Bobbi
-Create Initial Repository
-Gather datasets and resources
-Time Series Research
-Clean/Transform data for Daily
-Create line graphs showing day of the week trends for each crypto
-Definitions
-Read Me & Project Template Layout
+- Create Initial Repository
+- Created logo for Team
+- Gather datasets
+- Time Series Research & Resources
+- Clean/Transform data for Daily
+- Create line graphs showing day of the week trends for each crypto
+- Definitions
+- Read Me & Project Template Layout
 
 ##### David
-ERD
-Time Series Research
-ML research/start
-Read Me & Project Template Layout
+- ERD
+- Time Series Research
+- ML research/start
+- Read Me & Project Template Layout
 
 ### Future Enhancements
 Coinmarketcap API to csv: https://stevesie.com/apps/coinmarketcap-api
