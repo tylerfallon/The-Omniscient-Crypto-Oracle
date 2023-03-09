@@ -14,7 +14,7 @@ Remember that each team member, regardless of their role, needs to submit all th
 
 The cryptocurrency market is a center of a lot of activity. It is a growing market with much potential and profit. Data science is used in cryptocurrency to forecast and predict the prices of these digital coins. This science is used to figure out what causes the changes in prices of the coins, and then indictaes whether the prices will increase or decrease in the future. By focusing on market capitalization, or the coins' worth, one will predict how well or poorly a cryptocurrency will perform. 
 
-In this project, TABD will be focusing on 5 different cryptocurrencies and their overall performance, specifically: Bitcoin, Dogecoin, Litecoin, and Ethereum. After running parsed data into specific machine learning algorithms, our goal is obtain predictions whether it is a good time to buy or sell a specific cryptocurrency or not. In addition, we will be able to determine which kind of crypto market the data falls under, whether is it a bull, bear, or neutral market.
+In this project, TABD will be focusing on 5 different cryptocurrencies and their overall performance, specifically: Bitcoin, Dogecoin, Litecoin, Ripple and Ethereum. After running parsed data into specific machine learning algorithms, our goal is obtain predictions whether it is a good time to buy or sell a specific cryptocurrency or not. In addition, we will be able to determine which kind of crypto market the data falls under, whether is it a bull, bear, or neutral market.
 
 Two years data was analyzed and averaged by weekday to see if there were any trends for high/low days. 
 
@@ -92,8 +92,10 @@ Are there any particular trends that may be relevant?
 ##### David
 - ERD
 - Time Series Research
-- ML research/start
-- Read Me & Project Template Layout
+- Built Machine Learning model for all five crypocurrencies
+- Created Visualizations from Matplotlib
+- Evaluated Model with various types of metrics
+- Initialized ReadMe & Project Template Layout
 
 ### Future Enhancements
 Coinmarketcap API to csv: https://stevesie.com/apps/coinmarketcap-api
