@@ -46,20 +46,19 @@ https://www.investopedia.com/
 #### Data Tools: (Put database link here)
 [DataCleaning_preprocessingCode](.ipynb)
 Daily Trending Code & Images link
-[DatabaseSchema](.sql), 
+quickdatabasediagrams.com (ERD) 
 [MachineLearningModel](.ipynb) 
-[TableauDashboard]()
+
 
 #### Software: 
-Python (ver x), Visual Studio Code (ver x), Jupyter Notebook (ver x), Tableau (ver x), PostgresSQL (ver x)
+Visual Studio Code, Jupyter Notebook, Github
 
 #### Modules/Libraries: 
-Pandas (ver x), Scikit Learn (ver x), TensorFlow (ver x), Matplotlib (ver x), Plotly (ver x) , Python
-Keras, Long Short-Term Memory (LSTM) - (RNN model), Gated Recurrent Unit (GRU) - (RNN model), 
-Random Forests (RF) - used to compare, Stochastic Gradient Boosting Machine (SGBM) - used to compare,
+Python, Pandas, TensorFlow, Matplotlib, glob, Numpy
+Keras, Long Short-Term Memory (LSTM) - (RNN model),
 Scikit-learn Library - normalize data with MinMaxScaler(), evaluate using MAE (mean absolute error), confusion matrix, classification report
 
-### The Process
+## The Process
 #### Topic
 Cryptocurrencies – multiple types
 #### Original Idea
@@ -97,5 +96,5 @@ Are there any particular trends that may be relevant?
 - Evaluated Model with various types of metrics
 - Initialized ReadMe & Project Template Layout
 
-### Future Enhancements
+## Future Enhancements
 Coinmarketcap API to csv: https://stevesie.com/apps/coinmarketcap-api
