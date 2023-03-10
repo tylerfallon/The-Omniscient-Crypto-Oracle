@@ -44,11 +44,10 @@ https://www.investopedia.com/
       - https://towardsdatascience.com/cryptocurrency-price-prediction-using-deep-learning-70cfca50dd3a
   
 #### Data Tools: (Put database link here)
-[DataCleaning_preprocessingCode](.ipynb)
-Daily Trending Code & Images link
-quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/QuickDBD-export.png)
-[MachineLearningModel](.ipynb) 
 
+* [Preprocessing Code](.ipynb)
+* quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/QuickDBD-export.png)
+* [Machine Learning Model Code](.ipynb) 
 
 #### Software: 
 Visual Studio Code, Jupyter Notebook, Github
@@ -59,6 +58,7 @@ Keras, Long Short-Term Memory (LSTM) - (RNN model),
 Scikit-learn Library - normalize data with MinMaxScaler(), evaluate using MAE (mean absolute error), confusion matrix, classification report
 
 ## The Process
+
 #### Topic
 Cryptocurrencies – multiple types
 #### Original Idea
