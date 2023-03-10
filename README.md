@@ -46,7 +46,7 @@ https://www.investopedia.com/
 #### Data Tools: (Put database link here)
 [DataCleaning_preprocessingCode](.ipynb)
 Daily Trending Code & Images link
-quickdatabasediagrams.com (ERD) 
+quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/QuickDBD-export.png)
 [MachineLearningModel](.ipynb) 
 
 
