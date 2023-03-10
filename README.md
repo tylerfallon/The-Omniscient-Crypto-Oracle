@@ -1,52 +1,100 @@
 # The-Omniscient-Crypto-Oracle
+IMPORTANT
+Remember that each team member, regardless of their role, needs to submit all the pieces of the deliverable for each segment.
 
-![Project Logo](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/images/TABD.png)
 
-## Introduction
-
-The cryptocurrency market is a center of a lot of activity. It is a growing market with much potential and profit. Data science is used in cryptocurrency to forecast and predict the prices of these digital coins. This science is used to figure out what causes the changes in prices of the coins, and then indictaes whether the prices will increase or decrease in the future. By focusing on market capitalization, or the coins' worth, one will predict how well or poorly a cryptocurrency will perform. 
-
-In this project, TABD will be focusing on [NUMBER] different cryptocurrencies and their overall performance, specifically: BITCOIN, ..., ..., and ... After running parsed data into specific machine learning algorithms, our goal is obtain predictions whether one is safe to invest in these crypocurrencies or not. In addition, we will be able to determine which kind of crypto market the data falls under, whether is it a bull, bear, or neutral market.
-
-## Resources
-
-* Data Source: [Dataset1](), [Dataset2](), [Dataset3]()
-* Data Tools: [DataCleaning_preprocessingCode](.ipynb), [DatabaseSchema](.sql), [MachineLearningModel](.ipynb), [TableauDashboard]()
-* Software: Python (ver x), Visual Studio Code (ver x), Jupyter Notebook (ver x), Tableau (ver x), PostgresSQL (ver x)
-* Modules/Libraries: Pandas (ver x), Scikit Learn (ver x), TensorFlow (ver x), Matplotlib (ver x), Plotly (ver x)
-
-## **Take A Byte Data** - Team Members
-
+![dataBytes2](https://user-images.githubusercontent.com/114044192/223600108-0371d529-3bad-4187-a8e3-ffb8a3c347f8.jpg) 
+### Team Members
 * Tyler Fallon
 * Aaron Horneman
 * Bobbi Colhour
 * David Oliver
 
-## Deliverable 1
+## Introduction
 
-### Requirements for Segment 1
-Segment 1 is worth 33% of your overall grade for the Final Project.
+The cryptocurrency market is a center of a lot of activity. It is a growing market with much potential and profit. Data science is used in cryptocurrency to forecast and predict the prices of these digital coins. This science is used to figure out what causes the changes in prices of the coins, and then indictaes whether the prices will increase or decrease in the future. By focusing on market capitalization, or the coins' worth, one will predict how well or poorly a cryptocurrency will perform. 
 
-Before you submit the Segment 1 deliverable, make sure that you have all the pieces in place by reviewing the requirements.
+In this project, TABD will be focusing on 5 different cryptocurrencies and their overall performance, specifically: Bitcoin, Dogecoin, Litecoin, Ripple and Ethereum. After running parsed data into specific machine learning algorithms, our goal is obtain predictions whether it is a good time to buy or sell a specific cryptocurrency or not. In addition, we will be able to determine which kind of crypto market the data falls under, whether is it a bull, bear, or neutral market.
 
-#### Content (60 points)
-In this segment, the project deliverable includes the following:
+Two years data was analyzed and averaged by weekday to see if there were any trends for high/low days. 
 
-- A detailed README.md file (20 points)
-- At least four commits per team member (20 points)
-- A database that stores at least two tables (or collections) for the project (20 points)
-We encourage you to choose and explore a dataset before committing to an idea for your project. Designing a database to hold your data will often reveal potential project ideas that you might not have thought of before. Try to spend the majority of this segment focused on digging into the data that you have and understanding any valuable insights that it might hold.
 
-While working with the data, be sure to make regular commits. Each team member should have at least four commits by the end of the segment. And every time that the team meets, you should start and end the session by spending a few minutes reviewing and updating the README.md file. This file should always reflect the current status of the project, any specific needs or challenges that exist, and the plans for future work. Make sure to include links to your data, your slide deck, and any other important references. Don’t worry if the README.md file doesn’t yet appear worthy of showing in a job interview. This file will reflect the status of the project—so once the project is showcase ready, the README.md file will be, too.
+## Resources
 
-#### Presentation (40 points)
-In this segment, the presentation deliverable includes the following:
+### Data Sources: 
+#### Monthly Data
+https://coinmetrics.io/community-network-data/
 
-- The selected topic and the reasoning for that selection (20 points)
-- A description of the data (20 points)
-- The questions that the team plans to answer with the project (20 points)
-During this early phase, focus on outlining and documenting your ideas, questions, and data. You don’t need to have a slide deck at this point. If the team feels more comfortable outlining this information in the README.md file, that’s perfectly acceptable. This kind of documentation and outline is critical not only for the final presentation but also to organize and align all the team members on the goals and deadlines of the project.
+#### Daily Data
+https://www.investing.com/crypto/xrp/historical-data 
+https://www.investing.com/crypto/ethereum/historical-data 
+https://www.investing.com/crypto/bitcoin/historical-data 
+https://www.investing.com/crypto/dogecoin/historical-data
+https://www.investing.com/crypto/litecoin/historical-data
 
-IMPORTANT
-Remember that each team member, regardless of their role, needs to submit all the pieces of the deliverable for each segment.
+#### Definition
+https://www.investopedia.com/
 
+#### Data Resources: 
+  - Deep Learning Algorithm to Predict Cryptocurrency Fluctuation Prices: Increasing Investment Awareness
+      - https://www.mdpi.com/2079-9292/11/15/2349
+  - Cryptocurrency price prediction using LSTMs | TensorFlow for Hackers (Part III)  
+      - https://towardsdatascience.com/cryptocurrency-price-prediction-using-lstms-tensorflow-for-hackers-part-iii-264fcdbccd3f
+  - Cryptocurrency Price Prediction Using Deep Learning
+      - https://towardsdatascience.com/cryptocurrency-price-prediction-using-deep-learning-70cfca50dd3a
+  
+#### Data Tools: (Put database link here)
+
+* [Preprocessing Code](.ipynb)
+* quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/QuickDBD-export.png)
+* [Machine Learning Model Code](.ipynb) 
+
+#### Software: 
+Visual Studio Code, Jupyter Notebook, Github
+
+#### Modules/Libraries: 
+Python, Pandas, TensorFlow, Matplotlib, glob, Numpy
+Keras, Long Short-Term Memory (LSTM) - (RNN model),
+Scikit-learn Library - normalize data with MinMaxScaler(), evaluate using MAE (mean absolute error), confusion matrix, classification report
+
+## The Process
+
+#### Topic
+Cryptocurrencies – multiple types
+#### Original Idea
+What type of market? 
+Is it a good time to invest?
+Is it a good time to sell?  
+Are there any particular trends that may be relevant?
+
+#### Tasks Breakdown
+##### Tyler
+- Create New Repository
+- Identify cryptos with 3 years history
+- Define market type criteria
+- Mock up dashboard
+
+##### Aaron
+- Cleaned all 5 set of data
+- Create database w/ 2 tables
+
+##### Bobbi
+- Create Initial Repository
+- Created logo for Team
+- Gather datasets
+- Time Series Research & Resources
+- Clean/Transform data for Daily
+- Create line graphs showing day of the week trends for each crypto
+- Definitions
+- Read Me & Project Template Layout
+
+##### David
+- ERD
+- Time Series Research
+- Built Machine Learning model for all five crypocurrencies
+- Created Visualizations from Matplotlib
+- Evaluated Model with various types of metrics
+- Initialized ReadMe & Project Template Layout
+
+## Future Enhancements
+Coinmarketcap API to csv: https://stevesie.com/apps/coinmarketcap-api
