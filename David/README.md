@@ -11,11 +11,15 @@ The project follows the following steps to create the LSTM model and predict fut
 
 * *Data Collection*: Historical price data of the five cryptocurrencies is collected from various sources, including Coin Metrics and Investing.com.
 
-* *Data Preprocessing*: The collected data is preprocessed by cleaning missing and inconsistent values, normalizing the data using MinMaxScaler, and creating sliding window sequences of the data.
+* *Data Preprocessing*: The collected data will be preprocessed to ensure that it is clean, complete, and ready for training. This will involve removing missing values, normalizing the data, and splitting it into training and testing sets.
 
 * *Model Building*: The LSTM model is built using the Keras library in Python. The model architecture includes several LSTM layers followed by a Dense layer. The model is trained on the training data.
 
 * *Model Evaluation*: The model is evaluated on the testing data using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and coefficient of determination (R^2) metrics. The predicted prices are compared to the actual prices to measure the accuracy of the model.
+
+* *Model Prediction*: The trained LSTM model will be used to predict the prices of the five cryptocurrencies for a specific future date range.
+
+* *Visualization*: The predicted prices will be plotted using Matplotlib to provide a clear representation of the model's performance.
 
 ## Summary:
 
