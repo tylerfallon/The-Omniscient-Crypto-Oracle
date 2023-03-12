@@ -1,52 +1,24 @@
-# The-Omniscient-Crypto-Oracle
+# The Omniscient Crypto Oracle
+#### by TABD (Take A Byte Data)
 
-![Project Logo](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/images/TABD.png)
+## Overview:
 
-## Introduction
+This project aims to predict the future prices of five cryptocurrencies - Bitcoin, Ethereum, Dogecoin, Ripple, and Litecoin - using a Long Short-Term Memory (LSTM) model. The purpose of the project is to explore the potential of deep learning models in cryptocurrency price prediction.
 
-The cryptocurrency market is a center of a lot of activity. It is a growing market with much potential and profit. Data science is used in cryptocurrency to forecast and predict the prices of these digital coins. This science is used to figure out what causes the changes in prices of the coins, and then indictaes whether the prices will increase or decrease in the future. By focusing on market capitalization, or the coins' worth, one will predict how well or poorly a cryptocurrency will perform. 
+## Analysis:
 
-In this project, TABD will be focusing on [NUMBER] different cryptocurrencies and their overall performance, specifically: BITCOIN, ..., ..., and ... After running parsed data into specific machine learning algorithms, our goal is obtain predictions whether one is safe to invest in these crypocurrencies or not. In addition, we will be able to determine which kind of crypto market the data falls under, whether is it a bull, bear, or neutral market.
+The project follows the following steps to create the LSTM model and predict future prices:
 
-## Resources
+* *Data Collection*: Historical price data of the five cryptocurrencies is collected from various sources, including Coin Metrics and Investing.com.
 
-* Data Source: [Dataset1](), [Dataset2](), [Dataset3]()
-* Data Tools: [DataCleaning_preprocessingCode](.ipynb), [DatabaseSchema](.sql), [MachineLearningModel](.ipynb), [TableauDashboard]()
-* Software: Python (ver x), Visual Studio Code (ver x), Jupyter Notebook (ver x), Tableau (ver x), PostgresSQL (ver x)
-* Modules/Libraries: Pandas (ver x), Scikit Learn (ver x), TensorFlow (ver x), Matplotlib (ver x), Plotly (ver x)
+* *Data Preprocessing*: The collected data is preprocessed by cleaning missing and inconsistent values, normalizing the data using MinMaxScaler, and creating sliding window sequences of the data.
 
-## **Take A Byte Data** - Team Members
+* *Model Building*: The LSTM model is built using the Keras library in Python. The model architecture includes several LSTM layers followed by a Dense layer. The model is trained on the training data.
 
-* Tyler Fallon
-* Aaron Horneman
-* Bobbi Colhour
-* David Oliver
+* *Model Evaluation*: The model is evaluated on the testing data using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and coefficient of determination (R^2) metrics. The predicted prices are compared to the actual prices to measure the accuracy of the model.
 
-## Deliverable 1
+## Summary:
 
-### Requirements for Segment 1
-Segment 1 is worth 33% of your overall grade for the Final Project.
+The project uses various metrics to evaluate the LSTM model's accuracy in predicting future prices of cryptocurrencies. The mean squared error (MSE) metric measures the average squared difference between the predicted and actual prices. A lower MSE value indicates better model performance. The coefficient of determination (R^2) metric measures the proportion of the variance in the dependent variable (i.e., cryptocurrency price) that is predictable from the independent variables (i.e., time and other features). A higher R^2 value indicates better model performance. The validation error is a metric used to evaluate the performance of the LSTM model during training and helps to prevent overfitting. The validation error is calculated on a validation dataset, which is a subset of the training dataset that is not used during the model training phase. However, in this specific project, the validation set was the same as the training set, so the model would not be evaluated on new, unseen data and could potentially overfit to the training data. This most likely resulted in a model that performs well on the training data but poorly on new data, which defeats the purpose of the model.
 
-Before you submit the Segment 1 deliverable, make sure that you have all the pieces in place by reviewing the requirements.
-
-#### Content (60 points)
-In this segment, the project deliverable includes the following:
-
-- A detailed README.md file (20 points)
-- At least four commits per team member (20 points)
-- A database that stores at least two tables (or collections) for the project (20 points)
-We encourage you to choose and explore a dataset before committing to an idea for your project. Designing a database to hold your data will often reveal potential project ideas that you might not have thought of before. Try to spend the majority of this segment focused on digging into the data that you have and understanding any valuable insights that it might hold.
-
-While working with the data, be sure to make regular commits. Each team member should have at least four commits by the end of the segment. And every time that the team meets, you should start and end the session by spending a few minutes reviewing and updating the README.md file. This file should always reflect the current status of the project, any specific needs or challenges that exist, and the plans for future work. Make sure to include links to your data, your slide deck, and any other important references. Don’t worry if the README.md file doesn’t yet appear worthy of showing in a job interview. This file will reflect the status of the project—so once the project is showcase ready, the README.md file will be, too.
-
-#### Presentation (40 points)
-In this segment, the presentation deliverable includes the following:
-
-- The selected topic and the reasoning for that selection (20 points)
-- A description of the data (20 points)
-- The questions that the team plans to answer with the project (20 points)
-During this early phase, focus on outlining and documenting your ideas, questions, and data. You don’t need to have a slide deck at this point. If the team feels more comfortable outlining this information in the README.md file, that’s perfectly acceptable. This kind of documentation and outline is critical not only for the final presentation but also to organize and align all the team members on the goals and deadlines of the project.
-
-IMPORTANT
-Remember that each team member, regardless of their role, needs to submit all the pieces of the deliverable for each segment.
-
+Overall, the LSTM model shows promising results in predicting future cryptocurrency prices. However, it is important to note that cryptocurrency prices are highly volatile and unpredictable, and the model's accuracy may vary depending on various factors such as market conditions, news events, and regulatory changes.
