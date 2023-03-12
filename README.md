@@ -1,9 +1,7 @@
 # The-Omniscient-Crypto-Oracle
-IMPORTANT
-Remember that each team member, regardless of their role, needs to submit all the pieces of the deliverable for each segment.
 
+![dataBytes2](https://user-images.githubusercontent.com/114044192/223600108-0371d529-3bad-4187-a8e3-ffb8a3c347f8.jpg)
 
-![dataBytes2](https://user-images.githubusercontent.com/114044192/223600108-0371d529-3bad-4187-a8e3-ffb8a3c347f8.jpg) 
 ### Team Members
 * Tyler Fallon
 * Aaron Horneman
@@ -47,15 +45,15 @@ https://www.investopedia.com/
 
 * [Preprocessing Code](.ipynb)
 * quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/QuickDBD-export.png)
-* [Machine Learning Model Code](.ipynb) 
+* [Machine Learning Model Codes](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David) 
 
 #### Software: 
 Visual Studio Code, Jupyter Notebook, Github
 
 #### Modules/Libraries: 
 Python, Pandas, TensorFlow, Matplotlib, glob, Numpy
-Keras, Long Short-Term Memory (LSTM) - (RNN model),
-Scikit-learn Library - normalize data with MinMaxScaler(), evaluate using MAE (mean absolute error), confusion matrix, classification report
+Keras, Long Short-Term Memory (LSTM),
+Scikit-learn Library
 
 ## The Process
 
@@ -94,6 +92,7 @@ Are there any particular trends that may be relevant?
 - Built Machine Learning model for all five crypocurrencies
 - Created Visualizations from Matplotlib
 - Evaluated Model with various types of metrics
+- Predicted Future Prices for all five cryptocurrencies
 - Initialized ReadMe & Project Template Layout
 
 ## Future Enhancements
