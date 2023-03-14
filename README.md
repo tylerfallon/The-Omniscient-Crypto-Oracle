@@ -17,18 +17,18 @@ In this project, TABD will be focusing on 5 different cryptocurrencies and their
 Two years data was analyzed and averaged by weekday to see if there were any trends for high/low days. 
 
 ## Criteria for whether the user should invest:
-  - Is it a bull, bear, or neutral market?
+### Is it a bull, bear, or neutral market?
   
-### Bull Market Criteria: 
+#### Bull Market Criteria: 
 1) Has Bitcoin price increased by over 35% in the past 3 months, and 100% in the past 6 months?
 2) Has the asset in question increased by over 50% in the past 3 months, and over 200% in the past 6 months?
 
-### Bear Market Criteria:
+#### Bear Market Criteria:
 1) Has Bitcoin price decreased by over 35% in the past 3 months, and 50% in the past 6 months? 
 2) Has the asset in question decreased by over 40% in the past 3 months and over 60% in the past 6 months?
 **For the above, if both 1 and 2, then highly likely bull market / bear market. If only 1, then somewhat likely bull market / bear market. If only 2, then it may indicate project growth or failure but not a true bull market / bear market. 
 
-### Neutral Market Criteria:
+#### Neutral Market Criteria:
 1) Has Bitcoin price stayed within a 35% range over the past 3 months, and neither increased or decreased more than 50% in the past 6 months? 
 2) Has the asset in question stayed within a 40% range over the past 3 month, and neither increased or decreased more than 65% in the past 6 months?
 * * If none of the above are true for bull, bear, or neutral market criteria, then it is too difficult to predict the market type
