@@ -70,6 +70,7 @@ Visual Studio Code, Jupyter Notebook, Github
 Python, Pandas, TensorFlow, Matplotlib, glob, Numpy
 Keras, Long Short-Term Memory (LSTM),
 Scikit-learn Library
+
 Dashboard: HTML, CSS (Bootstrap), Javascript, Flask.py
 
 ## The Process
