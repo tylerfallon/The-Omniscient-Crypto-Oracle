@@ -80,11 +80,30 @@ def getpercentchange():
     # priceOfCoin = data['bpi']['USD']['rate']
     # priceOfCoinFloat = round(float(priceOfCoin.replace(',', '')),2)
 
+
 @app.route('/getmarkettype', methods=['GET'])
 def getmarkettype():
-    # Define historical data variables
-    btc3MonthsAgoPrice = 90000  # example value
-    btc6MonthsAgoPrice = 150000  # example value
+    # Set API endpoint and parameters for BTC price 3 months ago
+    endpoint = 'https://api.coingecko.com/api/v3/coins/bitcoin/history'
+    start_date_3_months_ago = datetime.datetime.now() - datetime.timedelta(days=90)
+    params = {'date': start_date_3_months_ago.strftime('%d-%m-%Y')}
+
+    # Make API request and get response
+    response = requests.get(endpoint, params=params)
+
+    # Parse response and get BTC price
+    btc3MonthsAgoPrice = response.json()['market_data']['current_price']['usd']
+
+    # Set API endpoint and parameters for BTC price 6 months ago
+    endpoint = 'https://api.coingecko.com/api/v3/coins/bitcoin/history'
+    start_date_6_months_ago = datetime.datetime.now() - datetime.timedelta(days=180)
+    params = {'date': start_date_6_months_ago.strftime('%d-%m-%Y')}
+
+    # Make API request and get response
+    response = requests.get(endpoint, params=params)
+
+    # Parse response and get BTC price
+    btc6MonthsAgoPrice = response.json()['market_data']['current_price']['usd']
 
     # Fetch current Bitcoin price from Coindesk API using requests
     response = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
@@ -95,19 +114,21 @@ def getmarkettype():
     btc6MonthPercentChange = ((btcCurrentPrice - btc6MonthsAgoPrice) / btc6MonthsAgoPrice) * 100
 
     # Determine market type based on rules
-    if btc3MonthPercentChange > 35 and btc6MonthPercentChange > 100:
-        print('Bull market')
+    if btc3MonthPercentChange > 45 and btc6MonthPercentChange > 100:
         marketTypeFinal = "Bull Market"
-    elif btc3MonthPercentChange < -35 and btc6MonthPercentChange < -50:
-        print('Bear market')
+    elif btc3MonthPercentChange < -45 and btc6MonthPercentChange < -65:
         marketTypeFinal = "Bear Market"
-    elif -35 <= btc3MonthPercentChange <= 35 and -50 <= btc6MonthPercentChange <= 50:
-        print('Neutral market')
+    elif -45 <= btc3MonthPercentChange <= 45 and -65 <= btc6MonthPercentChange <= 65:
         marketTypeFinal = "Neutral Market"
     else:
-        print('Market type is difficult to predict')
-        marketTypeFinal = "Neutral Market"
+        marketTypeFinal = "Market type is difficult to predict"
     return jsonify(marketTypeFinal)
+
+    #return jsonify({'3 Month Change': btc3MonthPercentChange, '6 Month Change': btc6MonthPercentChange})
+    # "3 Month Change": 42.078524506658724, 
+    # "6 Month Change": 24.638586561060183
+
+   
 
 
 

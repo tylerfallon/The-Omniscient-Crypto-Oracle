@@ -10,8 +10,6 @@ async function updateCryptoPrice() {
   document.querySelector('#cryptoprice').innerHTML = '$' + cryptoDataUpdated.price;
 }
 
-updateCryptoPrice();
-
 
 async function initcryptopercentchange() {
   console.log('test2')
@@ -33,11 +31,11 @@ async function initMarketType() {
   return cryptodata;
 }
 
-async function updatePercentChange() {
+async function updateMarketType() {
   let marketType = await initMarketType();
   document.querySelector('#bullvsbear').innerHTML = marketType;
 }
 
 updateCryptoPrice();
 updatePercentChange();
-updatePercentChange()
+updateMarketType();
