@@ -15,7 +15,7 @@
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
                     <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-chart-bar"></i></div>
-                    <div class="sidebar-brand-text mx-3"><span><a href="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle"><strong><span style="color: rgb(255, 255, 255); background-color: transparent;">The Omniscient </span></strong></a><br><a href="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle"><strong><span style="color: rgb(255, 255, 255); background-color: transparent;">Crypto Oracle</span></strong></a></span></div>
+                    <div class="sidebar-brand-text mx-3"><span><a href="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle"><strong><span style="color: rgb(255, 255, 255); background-color: transparent;">Omniscient </span></strong></a><br><a href="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle"><strong><span style="color: rgb(255, 255, 255); background-color: transparent;">Oracle</span></strong></a></span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
@@ -125,11 +125,8 @@
                         <h3 class="text-dark mb-0">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate .csv</a>
                     </div>
                     <div class="input-group" style="margin: 26px;width: 200px;"></div>
-                    <div class="dropdown show" style="margin: 0px 0px 10px 0px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="true" data-bs-toggle="dropdown" type="button">Select a cryptocurrency to analyze trends</button>
-                        <div class="dropdown-menu show" data-bs-popper="none"><a class="dropdown-item" href="bitcoin">Bitcoin</a><a class="dropdown-item" href="ethereum">Ethereum</a><a class="dropdown-item" href="ripple">Ripple</a><a class="dropdown-item" href="dogecoin">Dogecoin</a><a class="dropdown-item" href="litecoin">Litecoin</a>
-                            <h6 class="dropdown-header">Header</h6>
-                            <h6 class="dropdown-header">Header</h6>
-                            <h6 class="dropdown-header">Header</h6><a class="dropdown-item" href="#">Menu Item</a><a class="dropdown-item" href="#">Menu Item</a><span class="dropdown-item-text">Text Item</span>
+                    <div class="dropdown" style="margin: 0px 0px 10px 0px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">Select a cryptocurrency to analyze trends</button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="bitcoin">Bitcoin</a><a class="dropdown-item" href="ethereum">Ethereum</a><a class="dropdown-item" href="ripple">Ripple</a><a class="dropdown-item" href="dogecoin">Dogecoin</a><a class="dropdown-item" href="litecoin">Litecoin</a>
                             <div class="dropdown-divider"></div>
                             <div class="dropdown-divider"></div>
                         </div>
@@ -169,7 +166,7 @@
                                             <div class="text-uppercase text-info fw-bold text-xs mb-1"><span>Percent Change</span></div>
                                             <div class="row g-0 align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><span>-%</span></div>
+                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><span id="btcpercentchange">-</span><span>%</span></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm">
