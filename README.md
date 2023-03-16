@@ -59,7 +59,7 @@ https://www.investopedia.com/
   
 #### Data Tools: (Put database link here)
 
-* [Preprocessing Code](.ipynb)
+* [Preprocessing Code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/c5cb4f91fa6658caf0f0b794f731a76e28a8d4bb/Aaron/Percent_of_change_dataset.csv)
 * quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/QuickDBD-export.png)
 * [Machine Learning Model Codes](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David) 
 
