@@ -116,13 +116,19 @@ def getmarkettype():
     # Determine market type based on rules
     if btc3MonthPercentChange > 45 and btc6MonthPercentChange > 100:
         marketTypeFinal = "Bull Market"
-    elif btc3MonthPercentChange < -45 and btc6MonthPercentChange < -65:
+    elif btc3MonthPercentChange < -45 and btc6MonthPercentChange < -60:
         marketTypeFinal = "Bear Market"
-    elif -45 <= btc3MonthPercentChange <= 45 and -65 <= btc6MonthPercentChange <= 65:
+    elif -45 <= btc3MonthPercentChange <= 45 and -60 <= btc6MonthPercentChange <= 60:
         marketTypeFinal = "Neutral Market"
     else:
         marketTypeFinal = "Market type is difficult to predict"
     return jsonify(marketTypeFinal)
+
+
+
+
+
+
 
     #return jsonify({'3 Month Change': btc3MonthPercentChange, '6 Month Change': btc6MonthPercentChange})
     # "3 Month Change": 42.078524506658724, 
