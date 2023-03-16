@@ -80,6 +80,38 @@ def getpercentchange():
     # priceOfCoin = data['bpi']['USD']['rate']
     # priceOfCoinFloat = round(float(priceOfCoin.replace(',', '')),2)
 
+@app.route('/getmarkettype', methods=['GET'])
+def getmarkettype():
+    # Define historical data variables
+    btc3MonthsAgoPrice = 90000  # example value
+    btc6MonthsAgoPrice = 150000  # example value
+
+    # Fetch current Bitcoin price from Coindesk API using requests
+    response = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+    btcCurrentPrice = response.json()['bpi']['USD']['rate_float']
+
+    # Calculate percentage change over past 3 and 6 months
+    btc3MonthPercentChange = ((btcCurrentPrice - btc3MonthsAgoPrice) / btc3MonthsAgoPrice) * 100
+    btc6MonthPercentChange = ((btcCurrentPrice - btc6MonthsAgoPrice) / btc6MonthsAgoPrice) * 100
+
+    # Determine market type based on rules
+    if btc3MonthPercentChange > 35 and btc6MonthPercentChange > 100:
+        print('Bull market')
+        marketTypeFinal = "Bull Market"
+    elif btc3MonthPercentChange < -35 and btc6MonthPercentChange < -50:
+        print('Bear market')
+        marketTypeFinal = "Bear Market"
+    elif -35 <= btc3MonthPercentChange <= 35 and -50 <= btc6MonthPercentChange <= 50:
+        print('Neutral market')
+        marketTypeFinal = "Neutral Market"
+    else:
+        print('Market type is difficult to predict')
+        marketTypeFinal = "Neutral Market"
+    return jsonify(marketTypeFinal)
+
+
+
+
 
     # # Get the current price
     # response = requests.get(COINBASE_API_URL)
