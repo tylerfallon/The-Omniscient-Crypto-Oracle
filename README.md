@@ -1,9 +1,7 @@
 # The-Omniscient-Crypto-Oracle
-IMPORTANT
-Remember that each team member, regardless of their role, needs to submit all the pieces of the deliverable for each segment.
 
+![dataBytes2](https://user-images.githubusercontent.com/114044192/223600108-0371d529-3bad-4187-a8e3-ffb8a3c347f8.jpg)
 
-![dataBytes2](https://user-images.githubusercontent.com/114044192/223600108-0371d529-3bad-4187-a8e3-ffb8a3c347f8.jpg) 
 ### Team Members
 * Tyler Fallon
 * Aaron Horneman
@@ -18,6 +16,22 @@ In this project, TABD will be focusing on 5 different cryptocurrencies and their
 
 Two years data was analyzed and averaged by weekday to see if there were any trends for high/low days. 
 
+## Criteria for whether the user should invest:
+### Is it a bull, bear, or neutral market?
+  
+#### Bull Market Criteria: 
+1) Has Bitcoin price increased by over 35% in the past 3 months, and 100% in the past 6 months?
+2) Has the asset in question increased by over 50% in the past 3 months, and over 200% in the past 6 months?
+
+#### Bear Market Criteria:
+1) Has Bitcoin price decreased by over 35% in the past 3 months, and 50% in the past 6 months? 
+2) Has the asset in question decreased by over 40% in the past 3 months and over 60% in the past 6 months?
+**For the above, if both 1 and 2, then highly likely bull market / bear market. If only 1, then somewhat likely bull market / bear market. If only 2, then it may indicate project growth or failure but not a true bull market / bear market. 
+
+#### Neutral Market Criteria:
+1) Has Bitcoin price stayed within a 35% range over the past 3 months, and neither increased or decreased more than 50% in the past 6 months? 
+2) Has the asset in question stayed within a 40% range over the past 3 month, and neither increased or decreased more than 65% in the past 6 months?
+* * If none of the above are true for bull, bear, or neutral market criteria, then it is too difficult to predict the market type
 
 ## Resources
 
@@ -47,15 +61,17 @@ https://www.investopedia.com/
 
 * [Preprocessing Code](.ipynb)
 * quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/QuickDBD-export.png)
-* [Machine Learning Model Code](.ipynb) 
+* [Machine Learning Model Codes](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David) 
 
 #### Software: 
 Visual Studio Code, Jupyter Notebook, Github
 
 #### Modules/Libraries: 
 Python, Pandas, TensorFlow, Matplotlib, glob, Numpy
-Keras, Long Short-Term Memory (LSTM) - (RNN model),
-Scikit-learn Library - normalize data with MinMaxScaler(), evaluate using MAE (mean absolute error), confusion matrix, classification report
+Keras, Long Short-Term Memory (LSTM),
+Scikit-learn Library
+
+Dashboard: HTML, CSS (Bootstrap), Javascript, Flask.py
 
 ## The Process
 
@@ -94,6 +110,7 @@ Are there any particular trends that may be relevant?
 - Built Machine Learning model for all five crypocurrencies
 - Created Visualizations from Matplotlib
 - Evaluated Model with various types of metrics
+- Predicted Future Prices for all five cryptocurrencies
 - Initialized ReadMe & Project Template Layout
 
 ## Future Enhancements
