@@ -199,31 +199,21 @@ def getdogepercentchange():
     # priceOfCoin = data['bpi']['USD']['rate']
     # priceOfCoinFloat = round(float(priceOfCoin.replace(',', '')),2)
 
-# @app.route('/getxrppercentchange', methods=['GET'])
-# def getxrppercentchange():
-#     # Get the current price
-#     url = 'https://api.kraken.com/0/public/Ticker?pair=XRPUSD'
-#     response = requests.get(url)
-#     response.raise_for_status()
-#     data = response.json()
-#     current_price = float(data['data']['amount'])
-#     # Get yesterday's date and time
-#     yesterday = datetime.datetime.now() - datetime.timedelta(days=1)
-#     yesterday_iso = yesterday.isoformat()
-#     # Get yesterday's price
-#     historical_price_url = f"{url}?date={yesterday_iso}"
-#     response = requests.get(historical_price_url)
-#     response.raise_for_status()
-#     data = response.json()
-#     yesterday_price = float(data['data']['amount'])
-#     # Calculate the percent change
-#     percent_change = ((current_price - yesterday_price) / yesterday_price) * 100
-#     # Display the percent change
-#     print(f"Litecoin percent change from yesterday to today: {percent_change:.2f}%")
-#     percent_change_rounded = f"{percent_change:.2f}"
-#     return jsonify({'name': 'Dogecoin', 'symbol': 'DOGE', 'price': percent_change_rounded})
-#     # priceOfCoin = data['bpi']['USD']['rate']
-#     # priceOfCoinFloat = round(float(priceOfCoin.replace(',', '')),2)
+@app.route('/getxrppercentchange', methods=['GET'])
+def getxrppercentchange():
+    # Set the Bittrex API endpoint for XRP/USD
+    endpoint = "https://api.bittrex.com/v3/markets/XRP-USD/summary"
+
+    # Query the Bittrex API
+    response = requests.get(endpoint)
+
+    # Extract the 24-hour percent change from the API response
+    percent_change = float(response.json()["percentChange"])
+
+    print(f"The 24-hour percent change of XRP is: {percent_change:.2f}%")
+    return jsonify({'name': 'Ripple', 'symbol': 'XRP', 'price': percent_change})
+    # priceOfCoin = data['bpi']['USD']['rate']
+    # priceOfCoinFloat = round(float(priceOfCoin.replace(',', '')),2)
 
 @app.route('/getmarkettype', methods=['GET'])
 def getmarkettype():
