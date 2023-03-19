@@ -146,5 +146,11 @@ If none of the above are true for bull, bear, or neutral market criteria, then i
 
 
 ## Future Enhancements
-- Coinmarketcap API to csv: https://stevesie.com/apps/coinmarketcap-api
-- Increase number of cryptocurrencies supported
+- Use a separate validation set: used to tune our model's hyperparameters and prevent overfitting
+- Use `Dropout`: randomly drops out some neurons during training to prevent overfitting
+- Use `Early Stopping`: stops training process when validation error stops improving to prevent overfitting
+- Add more features, such as technical indicators
+- Use other RNN models, CNN models, or even ensemble methods like Random Forest
+- Optimize hyperparameters such as learning rate, batch size, or number of epochs
+- Use different loss function, such as Mean Absolute Percentage Error (MAPE) to evaluate model
+- Experiment with different activation functions, such as Sigmoid or Tanh
