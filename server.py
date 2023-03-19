@@ -1,9 +1,11 @@
 from flask import Flask, jsonify, render_template
 import requests
 import datetime
-url = 'https://api.coindesk.com/v1/bpi/currentprice.json'
 COINBASE_API_URL = "https://api.coinbase.com/v2/prices/BTC-USD/spot"
-
+# url = 'https://api.coinbase.com/v2/prices/ETH-USD/spot'
+# url = 'https://api.coinbase.com/v2/prices/BTC-USD/spot'
+# url = 'https://api.coinbase.com/v2/prices/DOGE-USD/spot'
+# url = 'https://api.coinbase.com/v2/prices/LTC-USD/spot'
 
 
 app = Flask(__name__, static_url_path='/assets', static_folder='assets')
@@ -12,16 +14,17 @@ app = Flask(__name__, static_url_path='/assets', static_folder='assets')
 def index():
     return render_template('/index.html')
 
-# Define the data for Bitcoin
-bitcoin = {
-    'name': 'Bitcoin',
-    'symbol': 'BTC',
-    'price': 49832.13
-}
+# # Define the data for Bitcoin
+# bitcoin = {
+#     'name': 'Bitcoin',
+#     'symbol': 'BTC',
+#     'price': 49832.13
+# }
 
 # Define the route for Bitcoin
 @app.route('/bitcoin', methods=['GET'])
 def bitcoin():
+#    url = 'https://api.coindesk.com/v1/bpi/currentprice.json'
     return render_template('bitcoin.html')
 
 # @app.route('/bitcoin', methods=['GET'])
@@ -32,28 +35,64 @@ def bitcoin():
 
 @app.route('/ethereum', methods=['GET'])
 def ethereum():
-    return jsonify({'name': 'Ethereum', 'symbol': 'ETH', 'price': 1500.00})
+    return render_template('ethereum.html')
 
 @app.route('/ripple', methods=['GET'])
 def ripple():
-    return jsonify({'name': 'Ripple', 'symbol': 'XRP', 'price': 0.50})
+    return render_template('ripple.html')
 
 @app.route('/dogecoin', methods=['GET'])
 def dogecoin():
-    return jsonify({'name': 'Dogecoin', 'symbol': 'DOGE', 'price': 0.05})
+    return render_template('dogecoin.html')
 
 @app.route('/litecoin', methods=['GET'])
 def litecoin():
-    return jsonify({'name': 'Litecoin', 'symbol': 'LTC', 'price': 200.00})
+    return render_template('litecoin.html')
 
 @app.route('/getcryptodata', methods=['GET'])
 def getcryptodata():
+    url = 'https://api.coinbase.com/v2/prices/BTC-USD/spot'
     response = requests.get(url)
     data = response.json()
-    priceOfCoin = data['bpi']['USD']['rate']
-    priceOfCoinFloat = round(float(priceOfCoin.replace(',', '')),2)
+    priceOfCoin = data['data']['amount']
+    priceOfCoinFloat = round(float(priceOfCoin), 2)
+    return jsonify({'name': 'Bitcoin', 'symbol': 'BTC', 'price': priceOfCoinFloat})
+
+@app.route('/getethdata', methods=['GET'])
+def getethdata():
+    url = 'https://api.coinbase.com/v2/prices/ETH-USD/spot'
+    response = requests.get(url)
+    data = response.json()
+    priceOfCoin = data['data']['amount']
+    priceOfCoinFloat = round(float(priceOfCoin), 2)
     return jsonify({'name': 'Ethereum', 'symbol': 'ETH', 'price': priceOfCoinFloat})
 
+@app.route('/getdogedata', methods=['GET'])
+def getdogedata():
+    url = 'https://api.coinbase.com/v2/prices/DOGE-USD/spot'
+    response = requests.get(url)
+    data = response.json()
+    priceOfCoin = data['data']['amount']
+    priceOfCoinFloat = round(float(priceOfCoin), 2)
+    return jsonify({'name': 'Dogecoin', 'symbol': 'DOGE', 'price': priceOfCoinFloat})
+
+@app.route('/getltcdata', methods=['GET'])
+def getltcdata():
+    url = 'https://api.coinbase.com/v2/prices/LTC-USD/spot'
+    response = requests.get(url)
+    data = response.json()
+    priceOfCoin = data['data']['amount']
+    priceOfCoinFloat = round(float(priceOfCoin), 2)
+    return jsonify({'name': 'Litecoin', 'symbol': 'LTC', 'price': priceOfCoinFloat})
+
+@app.route('/getXRPdata', methods=['GET'])
+def getXRPdata():
+    url = 'https://api.kraken.com/0/public/Ticker?pair=XRPUSD'
+    response = requests.get(url)
+    data = response.json()
+    priceOfCoin = data['result']['XXRPZUSD']['c'][0]
+    priceOfCoinFloat = round(float(priceOfCoin), 2)
+    return jsonify({'name': 'Ripple', 'symbol': 'XRP', 'price': priceOfCoinFloat})
 
 @app.route('/getpercentchange', methods=['GET'])
 def getpercentchange():

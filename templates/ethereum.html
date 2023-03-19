@@ -12,12 +12,13 @@
 
 <body id="page-top">
     <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background: rgb(28,200,138);">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
                     <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-chart-bar"></i></div>
-                    <div class="sidebar-brand-text mx-3"><span><a href="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle"><strong><span style="color: rgb(255, 255, 255); background-color: transparent;">Omniscient </span></strong></a><br><a href="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle"><strong><span style="color: rgb(255, 255, 255); background-color: transparent;">Oracle</span></strong></a></span></div>
+                    <div class="sidebar-brand-text mx-3"></div>
                 </a>
                 <hr class="sidebar-divider my-0">
+                <h1 style="font-size: 20px;"><a href="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle"><strong><span style="color: rgb(255, 255, 255); background-color: transparent;">OMNISCIENT</span></strong></a><br><a href="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle"><strong><span style="color: rgb(255, 255, 255); background-color: transparent;">ORACLE</span></strong></a></h1>
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"></li>
@@ -122,15 +123,12 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h3 class="text-dark mb-0">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate .csv</a>
+                        <h3 class="text-dark mb-0">Dashboard</h3>
+                        <h3 class="text-dark mb-0"><strong>Ethereum</strong></h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#" style="background: rgb(30,199,137);"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate .csv <br>(coming soon)</a>
                     </div>
                     <div class="input-group" style="margin: 26px;width: 200px;"></div>
-                    <div class="dropdown show" style="margin: 0px 0px 10px 0px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="true" data-bs-toggle="dropdown" type="button">Select a cryptocurrency to analyze</button>
-                        <div class="dropdown-menu show" data-bs-popper="none"><a class="dropdown-item" href="bitcoin">Bitcoin</a><a class="dropdown-item" href="ethereum">Ethereum</a><a class="dropdown-item" href="ripple">Ripple</a><a class="dropdown-item" href="dogecoin">Dogecoin</a><a class="dropdown-item" href="litecoin">Litecoin</a>
-                            <h6 class="dropdown-header">Header</h6>
-                            <h6 class="dropdown-header">Header</h6>
-                            <h6 class="dropdown-header">Header</h6><a class="dropdown-item" href="#">Menu Item</a><a class="dropdown-item" href="#">Menu Item</a><span class="dropdown-item-text">Text Item</span>
-                            <div class="dropdown-divider"></div>
+                    <div class="dropdown" style="margin: 0px 0px 10px 0px;"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button" style="background: rgb(28,200,138);">Select a cryptocurrency to analyze</button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="bitcoin">Bitcoin</a><a class="dropdown-item" href="ethereum">Ethereum</a><a class="dropdown-item ripple" href="ripple">Ripple</a><a class="dropdown-item" href="dogecoin">Dogecoin</a><a class="dropdown-item" href="litecoin">Litecoin</a>
                             <div class="dropdown-divider"></div>
                         </div>
                     </div>
@@ -140,8 +138,8 @@
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
-                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span><strong><span style="color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) ;">PREDICTED CRYPTOCURRENCY PRICE</span></strong></span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>$40,000</span></div>
+                                            <div class="text-uppercase text-primary fw-bold text-xs mb-1"><span><strong><span style="color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) ;">CURRENT PRICE</span></strong></span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="ethprice"><em><span style="font-weight: normal !important;">Loading...</span></em></span></div>
                                         </div>
                                         <div class="col-auto"><i class="fas fa-calendar fa-2x text-gray-300"></i></div>
                                     </div>
@@ -153,8 +151,8 @@
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
-                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span><strong><span style="color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) ;">CURRENT CRYPTOCURRENCY PRICE&nbsp;</span></strong></span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>$215,000</span></div>
+                                            <div class="text-uppercase text-success fw-bold text-xs mb-1"><span><strong><span style="color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) ;">PREDICTED PRICE in 2 months</span></strong></span></div>
+                                            <div class="text-dark fw-bold h5 mb-0"><span id="btcpredictedprice">$26529.32</span></div>
                                         </div>
                                         <div class="col-auto"><i class="fas fa-dollar-sign fa-2x text-gray-300"></i></div>
                                     </div>
@@ -166,10 +164,10 @@
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
-                                            <div class="text-uppercase text-info fw-bold text-xs mb-1"><span>Percent Change</span></div>
+                                            <div class="text-uppercase text-info fw-bold text-xs mb-1"><span>24-Hour <br>Percent Change</span></div>
                                             <div class="row g-0 align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><span>50%</span></div>
+                                                    <div class="text-dark fw-bold h5 mb-0 me-3"><span id="btcpercentchange"><em><span style="font-weight: normal !important;">Loading</span></em>...</span></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm">
@@ -188,8 +186,8 @@
                                 <div class="card-body">
                                     <div class="row align-items-center no-gutters">
                                         <div class="col me-2">
-                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span>4th piece of data</span></div>
-                                            <div class="text-dark fw-bold h5 mb-0"><span>18</span></div>
+                                            <div class="text-uppercase text-warning fw-bold text-xs mb-1"><span>We are currently in a:</span></div>
+                                            <div class="text-dark fw-bold h5 mb-0" id="bullorbear"><span id="bullvsbear"><em><span style="font-weight: normal !important;">Loading...</span></em></span></div>
                                         </div>
                                         <div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div>
                                     </div>
@@ -201,7 +199,7 @@
                         <div class="col-lg-7 col-xl-8">
                             <div class="card shadow mb-4">
                                 <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h6 class="text-primary fw-bold m-0">Cryptocurrency Price Chart</h6>
+                                    <h6 class="text-primary fw-bold m-0" id="cryptodata">Cryptocurrency Price Chart</h6>
                                     <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
                                         <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
                                             <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
@@ -236,88 +234,20 @@
                         <div class="col-lg-6 mb-4">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="text-primary fw-bold m-0">Projects</h6>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="small fw-bold">Server migration<span class="float-end">20%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="visually-hidden">20%</span></div>
-                                    </div>
-                                    <h4 class="small fw-bold">Sales tracking<span class="float-end">40%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="visually-hidden">40%</span></div>
-                                    </div>
-                                    <h4 class="small fw-bold">Customer Database<span class="float-end">60%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="visually-hidden">60%</span></div>
-                                    </div>
-                                    <h4 class="small fw-bold">Payout Details<span class="float-end">80%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="visually-hidden">80%</span></div>
-                                    </div>
-                                    <h4 class="small fw-bold">Account setup<span class="float-end">Complete!</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
-                                    </div>
+                                    <h1 style="height: 76px;font-size: 30px;color: rgb(28,200,138);"><strong><span style="background-color: transparent;">Is it a bull, bear, or neutral market?</span></strong></h1>
+                                    <p style="border-style: none;color: rgb(28,200,138);">The following rules are used above to determine the market type:<br><br><strong><span style="background-color: transparent;">Bull Market Criteria</span></strong><br><span style="background-color: transparent;">1) Has Bitcoin price increased by over 45% in the past 3 months, and 100% in the past 6 months?</span><br><br><span style="background-color: transparent;">2) Has the asset in question increased by over 65% in the past 3 months, and over 200% in the past 6 months?</span><br><br><br><strong><span style="background-color: transparent;">Bear Market Criteria</span></strong><br><span style="background-color: transparent;">1) Has Bitcoin price decreased by over 45% in the past 3 months, and 65% in the past 6 months? </span><br><br><span style="background-color: transparent;">2) Has the asset in question decreased by over 45% in the past 3 months and over 65% in the past 6 months?</span><br><br><span style="background-color: transparent;">**For the above, if both 1 and 2, then highly likely bull market / bear market. If only 1, then somewhat likely bull market / bear market. If only 2, then it may indicate project growth or failure but not a true bull market / bear market.&nbsp;</span><br><br><br><strong><span style="background-color: transparent;">Neutral Market Criteria</span></strong><br><span style="background-color: transparent;">1) Has Bitcoin price stayed within a 45% range over the past 3 months, and neither increased or decreased more than 65% in the past 6 months?&nbsp;</span><br><br><span style="background-color: transparent;">2) Has the asset in question stayed within a 45% range over the past 3 month, and neither increased or decreased more than 65% in the past 6 months?</span><br><br><span style="background-color: transparent;">**If none of the above are true for bull, bear, or neutral market criteria, then it is too difficult to predict the market type</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="row">
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-primary shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Primary</p>
-                                            <p class="text-white-50 small m-0">#4e73df</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-success shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Success</p>
-                                            <p class="text-white-50 small m-0">#1cc88a</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-info shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Info</p>
-                                            <p class="text-white-50 small m-0">#36b9cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-warning shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Warning</p>
-                                            <p class="text-white-50 small m-0">#f6c23e</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-danger shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Danger</p>
-                                            <p class="text-white-50 small m-0">#e74a3b</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-secondary shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Secondary</p>
-                                            <p class="text-white-50 small m-0">#858796</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <h1 style="height: 76px;font-size: 30px;color: rgb(28,200,138);"><br><strong><span style="background-color: transparent;">Graphs</span></strong></h1><img width="100" height="80" style="margin: 10px;"><img><img style="margin: 10px;"><img style="margin: 10px;">
+                            <picture><img></picture>
+                            <picture><img style="margin: 10px;"></picture>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="bg-white sticky-footer">
+            <footer class="bg-white sticky-footer" style="border-radius: 20px;border-color: var(--bs-blue);">
                 <div class="container my-auto">
                     <div class="text-center my-auto copyright"><span>Copyright © The Omniscent Crypto Oracle 2023</span></div>
                 </div>
