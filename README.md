@@ -42,7 +42,7 @@ https://www.investopedia.com/
 #### Data Tools: (Put database link here)
 
 * [Preprocessing Code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/b0425cc016031bcfc09992cbb61c9597b5496a38/Aaron/data_cleanup.ipynb)
-* quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/QuickDBD-export.png)
+* quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/QuickDBD-export.png)
 * [Machine Learning Model Codes](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David) 
 * [Daily Trend Code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/Code)
 * [Dashboard]
