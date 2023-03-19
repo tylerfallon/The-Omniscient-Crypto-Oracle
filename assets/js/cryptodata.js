@@ -71,6 +71,17 @@ async function updatePercentChange() {
   document.querySelector('#btcpercentchange').innerHTML = percentChangeUpdated.price + '%';
 }
 
+async function initethpercentchange() {
+  console.log('ETH percent change')
+  let response = await fetch('/getethpercentchange')
+  const ethchangedata = await response.json();
+  return ethchangedata;
+}
+
+async function updateETHPercentChange() {
+  let percentETHChangeUpdated = await initethpercentchange();
+  document.querySelector('#ethpercentchange').innerHTML = percentETHChangeUpdated.price + '%';
+}
 
 async function initMarketType() {
   console.log('test3')
@@ -91,3 +102,4 @@ updateETHPrice()
 updateDOGEPrice()
 updateLTCPrice()
 updateXRPPrice()
+updateETHPercentChange();

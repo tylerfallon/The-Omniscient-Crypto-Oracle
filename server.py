@@ -94,6 +94,7 @@ def getXRPdata():
     priceOfCoinFloat = round(float(priceOfCoin), 2)
     return jsonify({'name': 'Ripple', 'symbol': 'XRP', 'price': priceOfCoinFloat})
 
+
 @app.route('/getpercentchange', methods=['GET'])
 def getpercentchange():
     # Get the current price
@@ -114,6 +115,32 @@ def getpercentchange():
     percent_change = ((current_price - yesterday_price) / yesterday_price) * 100
     # Display the percent change
     print(f"Bitcoin percent change from yesterday to today: {percent_change:.2f}%")
+    percent_change_rounded = f"{percent_change:.2f}"
+    return jsonify({'name': 'Ethereum', 'symbol': 'ETH', 'price': percent_change_rounded})
+    # priceOfCoin = data['bpi']['USD']['rate']
+    # priceOfCoinFloat = round(float(priceOfCoin.replace(',', '')),2)
+
+@app.route('/getethpercentchange', methods=['GET'])
+def getethpercentchange():
+    # Get the current price
+    url = 'https://api.coinbase.com/v2/prices/ETH-USD/spot'
+    response = requests.get(url)
+    response.raise_for_status()
+    data = response.json()
+    current_price = float(data['data']['amount'])
+    # Get yesterday's date and time
+    yesterday = datetime.datetime.now() - datetime.timedelta(days=1)
+    yesterday_iso = yesterday.isoformat()
+    # Get yesterday's price
+    historical_price_url = f"{url}?date={yesterday_iso}"
+    response = requests.get(historical_price_url)
+    response.raise_for_status()
+    data = response.json()
+    yesterday_price = float(data['data']['amount'])
+    # Calculate the percent change
+    percent_change = ((current_price - yesterday_price) / yesterday_price) * 100
+    # Display the percent change
+    print(f"Ethereum percent change from yesterday to today: {percent_change:.2f}%")
     percent_change_rounded = f"{percent_change:.2f}"
     return jsonify({'name': 'Ethereum', 'symbol': 'ETH', 'price': percent_change_rounded})
     # priceOfCoin = data['bpi']['USD']['rate']
