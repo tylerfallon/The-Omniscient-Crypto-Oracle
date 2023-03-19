@@ -83,6 +83,31 @@ async function updateETHPercentChange() {
   document.querySelector('#ethpercentchange').innerHTML = percentETHChangeUpdated.price + '%';
 }
 
+async function initltcpercentchange() {
+  console.log('LTC percent change')
+  let response = await fetch('/getltcpercentchange')
+  const ltcchangedata = await response.json();
+  return ltcchangedata;
+}
+
+async function updateLTCPercentChange() {
+  let percentLTCChangeUpdated = await initltcpercentchange();
+  document.querySelector('#ltcpercentchange').innerHTML = percentLTCChangeUpdated.price + '%';
+}
+
+async function initDOGEpercentchange() {
+  console.log('DOGE percent change')
+  let response = await fetch('/getdogepercentchange')
+  const dogechangedata = await response.json();
+  return dogechangedata;
+}
+
+async function updateDOGEPercentChange() {
+  let percentDOGEChangeUpdated = await initDOGEpercentchange();
+  document.querySelector('#dogepercentchange').innerHTML = percentDOGEChangeUpdated.price + '%';
+}
+
+
 async function initMarketType() {
   console.log('test3')
   let response = await fetch('/getmarkettype')
@@ -103,3 +128,5 @@ updateDOGEPrice()
 updateLTCPrice()
 updateXRPPrice()
 updateETHPercentChange();
+updateLTCPercentChange();
+updateDOGEPercentChange();
