@@ -10,30 +10,13 @@
 
 ## Introduction
 
-The cryptocurrency market is a center of a lot of activity. It is a growing market with much potential and profit. Data science is used in cryptocurrency to forecast and predict the prices of these digital coins. This science is used to figure out what causes the changes in prices of the coins, and then indictaes whether the prices will increase or decrease in the future. By focusing on market capitalization, or the coins' worth, one will predict how well or poorly a cryptocurrency will perform. 
+The cryptocurrency market is a center of a lot of activity. It is a growing market with much potential and profit. Data science is used in cryptocurrency to forecast and predict the prices of these digital coins. This science is used to figure out what causes the changes in prices of the coins, and then indicates whether the prices will increase or decrease in the future. By focusing on market capitalization, or the coins' worth, one will predict how well or poorly a cryptocurrency will perform. 
 
 In this project, TABD will be focusing on 5 different cryptocurrencies and their overall performance, specifically: Bitcoin, Dogecoin, Litecoin, Ripple and Ethereum. After running parsed data into specific machine learning algorithms, our goal is obtain predictions whether it is a good time to buy or sell a specific cryptocurrency or not. In addition, we will be able to determine which kind of crypto market the data falls under, whether is it a bull, bear, or neutral market.
 
-Two years data was analyzed and averaged by weekday to see if there were any trends for high/low days. 
-
-## Criteria for whether the user should invest:
-### Is it a bull, bear, or neutral market?
-  
-#### Bull Market Criteria: 
-1) Has Bitcoin price increased by over 70% in the past 3 months, and 150% in the past 6 months?
-2) Has the asset in question increased by over 70% in the past 3 months, and over 200% in the past 6 months?
-
-#### Bear Market Criteria:
-1) Has Bitcoin price decreased by over 40% in the past 3 months, and 60% in the past 6 months? 
-2) Has the asset in question decreased by over 40% in the past 3 months and over 60% in the past 6 months?
-**For the above, if both 1 and 2, then highly likely bull market / bear market. If only 1, then somewhat likely bull market / bear market. If only 2, then it may indicate project growth or failure but not a true bull market / bear market. 
-
-#### Neutral Market Criteria:
-1) Has Bitcoin price stayed within a 70% range over the past 3 months, and neither increased or decreased more than 150% in the past 6 months? 
-2) Has the asset in question stayed within a 70% range over the past 3 month, and neither increased or decreased more than 150% in the past 6 months?
-
-#### Too Difficult To Predict Market Type Criteria:
-If none of the above are true for bull, bear, or neutral market criteria, then it is too difficult to predict the market type.
+  - API connections were used to get real time data of current crypto price and to evaluate the type of market. 
+  - Ten years data for each cryptocurrency was used for the machine learning module to attempt to predict the price within 60 days of data. 
+  - Two years data was analyzed and averaged by weekday to see if there were any trends for high/low days. 
 
 ## Resources
 
@@ -64,6 +47,8 @@ https://www.investopedia.com/
 * [Preprocessing Code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/b0425cc016031bcfc09992cbb61c9597b5496a38/Aaron/data_cleanup.ipynb)
 * quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/david/QuickDBD-export.png)
 * [Machine Learning Model Codes](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David) 
+* [Daily Trend Code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/Code)
+* [Dashboard]
 
 #### Software: 
 Visual Studio Code, Jupyter Notebook, Github
@@ -86,34 +71,83 @@ Is it a good time to sell?
 Are there any particular trends that may be relevant?
 
 #### Tasks Breakdown
+
+##### Aaron 
+[Read Me](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/README.md)
+- [Cleaned all 5 set of data](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/data_cleanup.ipynb)
+- Combined cleaned DataFrames into single DataFrame
+
+![image](https://user-images.githubusercontent.com/114044192/226200792-d73955be-1026-458f-8b8a-33c4556c623a.png)
+
+- Added column to calculate percent of change
+
+![percent of change](https://user-images.githubusercontent.com/113067853/225774380-3e45ed66-8d3b-44ee-91b2-e766443ce3fb.PNG)
+
+- Assisted in reviewing code, gathering images, dashboard
+
+##### Bobbi
+[Read Me](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Bobbi/information/BobbiREADME.md)
+- [Created Initial Repository](https://github.com/bcolhour/TABD)
+- Created logo for Team
+- [Gather datasets](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/Resources)
+- Time Series Research & Resources
+- [Clean/Transform data for Daily](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/Code)
+- [Create line graphs showing day of the week trends for each crypto](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/images)-
+
+![image](https://user-images.githubusercontent.com/114044192/223884809-f680644c-b7c4-4a7e-a5de-05424cd52e1d.png)
+![Dogecoin Daily](https://user-images.githubusercontent.com/114044192/223884894-1f037697-25fd-4c04-a9f5-c28ebe337072.png)
+![ETH Daily](https://user-images.githubusercontent.com/114044192/223884903-3595e265-1081-4cc2-8db1-1ba381f4c079.png)
+![LiteCoin Daily](https://user-images.githubusercontent.com/114044192/223884912-b3edd12b-a4fc-413b-b003-f04c0300ffb9.png)
+![XRP Daily](https://user-images.githubusercontent.com/114044192/223884926-722eb05b-8d66-471b-88b4-7de6109fd01d.png)
+
+- Definitions
+- Read Me & Project Template Layout
+- Assisted in reviewing code, dashboard
+
+##### David
+[ReadMe](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/README.md)
+- ERD
+- Time Series Research
+- [Built Machine Learning model for all five crypocurrencies](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David):  The LSTM model used to predict cryptocurrency prices takes in historical data, including close prices, and feeds it through a neural network with three LSTM layers, each consisting of 50 neurons with the ReLU activation function. The input shape for the LSTM model should be a 3-dimensional array, where the first dimension is the number of samples, the second dimension is the number of time steps, and the third dimension is the number of features or variables in the input data.
+- Created Visualizations from Matplotlib
+- Evaluated Model with various types of metrics for each cryptocurrency
+
+<img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Predicted%20vs.%20True%20Values%20Dogecoin.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Prediction%20Error%20Histogram%20Ethem.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Actual%20vs%20Predicted%20Bitcoin%20Prices.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Actual%20vs%20Predicted%20Ripple%20Rolling%20Mean.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Training%20and%20Validation%20Loss%20Litecoin.PNG" width=50% height=50%>
+
+
+- Predicted Future Prices for all five cryptocurrencies: Overall, the LSTM model shows promising results in predicting future cryptocurrency prices. However, it is important to note that cryptocurrency prices are highly volatile and unpredictable, and the model's accuracy may vary depending on various factors such as market conditions, news events, and regulatory changes.
+ 
+<img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/BTCPrediction.png" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/DogePrediction.png " width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/ETHPrediction.png " width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LTCPrediction.png " width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/XRPPrediction.png " width=50% height=50%>
+- Initialized ReadMe & Project Template Layout
+
 ##### Tyler
-- Create New Repository
+[READ ME - Need to complete and insert link]("Insert Link"
+- [Create New Repository](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle)
 - Identify cryptos with 3 years history
 - Define market type criteria
 - Mock up dashboard
 
-##### Aaron
-- Cleaned all 5 set of data
-- Create database w/ 2 tables
+## Criteria for whether the user should invest:
+### Is it a bull, bear, or neutral market?
+  
+#### Bull Market Criteria: 
+1) Has Bitcoin price increased by over 70% in the past 3 months, and 150% in the past 6 months?
+2) Has the asset in question increased by over 70% in the past 3 months, and over 200% in the past 6 months?
 
-##### Bobbi
-- Create Initial Repository
-- Created logo for Team
-- Gather datasets
-- Time Series Research & Resources
-- Clean/Transform data for Daily
-- Create line graphs showing day of the week trends for each crypto
-- Definitions
-- Read Me & Project Template Layout
+#### Bear Market Criteria:
+1) Has Bitcoin price decreased by over 40% in the past 3 months, and 60% in the past 6 months? 
+2) Has the asset in question decreased by over 40% in the past 3 months and over 60% in the past 6 months?
+**For the above, if both 1 and 2, then highly likely bull market / bear market. If only 1, then somewhat likely bull market / bear market. If only 2, then it may indicate project growth or failure but not a true bull market / bear market. 
 
-##### David
-- ERD
-- Time Series Research
-- Built Machine Learning model for all five crypocurrencies
-- Created Visualizations from Matplotlib
-- Evaluated Model with various types of metrics
-- Predicted Future Prices for all five cryptocurrencies
-- Initialized ReadMe & Project Template Layout
+#### Neutral Market Criteria:
+1) Has Bitcoin price stayed within a 70% range over the past 3 months, and neither increased or decreased more than 150% in the past 6 months? 
+2) Has the asset in question stayed within a 70% range over the past 3 month, and neither increased or decreased more than 150% in the past 6 months?
+
+#### Too Difficult To Predict Market Type Criteria:
+If none of the above are true for bull, bear, or neutral market criteria, then it is too difficult to predict the market type.
+
+## Results
+
 
 ## Future Enhancements
 Coinmarketcap API to csv: https://stevesie.com/apps/coinmarketcap-api
