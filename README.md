@@ -31,7 +31,9 @@ Two years data was analyzed and averaged by weekday to see if there were any tre
 #### Neutral Market Criteria:
 1) Has Bitcoin price stayed within a 70% range over the past 3 months, and neither increased or decreased more than 150% in the past 6 months? 
 2) Has the asset in question stayed within a 70% range over the past 3 month, and neither increased or decreased more than 150% in the past 6 months?
-* * If none of the above are true for bull, bear, or neutral market criteria, then it is too difficult to predict the market type
+
+#### Too Difficult To Predict Market Type Criteria:
+If none of the above are true for bull, bear, or neutral market criteria, then it is too difficult to predict the market type.
 
 ## Resources
 
