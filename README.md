@@ -35,12 +35,9 @@ https://www.investing.com/crypto/litecoin/historical-data
 https://www.investopedia.com/
 
 #### Data Resources: 
-  - Deep Learning Algorithm to Predict Cryptocurrency Fluctuation Prices: Increasing Investment Awareness
-      - https://www.mdpi.com/2079-9292/11/15/2349
-  - Cryptocurrency price prediction using LSTMs | TensorFlow for Hackers (Part III)  
-      - https://towardsdatascience.com/cryptocurrency-price-prediction-using-lstms-tensorflow-for-hackers-part-iii-264fcdbccd3f
-  - Cryptocurrency Price Prediction Using Deep Learning
-      - https://towardsdatascience.com/cryptocurrency-price-prediction-using-deep-learning-70cfca50dd3a
+  - [Deep Learning Algorithm to Predict Cryptocurrency Fluctuation Prices: Increasing Investment Awareness](https://www.mdpi.com/2079-9292/11/15/2349)
+  - [Cryptocurrency price prediction using LSTMs | TensorFlow for Hackers (Part III)](https://towardsdatascience.com/cryptocurrency-price-prediction-using-lstms-tensorflow-for-hackers-part-iii-264fcdbccd3f)
+  - [Cryptocurrency Price Prediction Using Deep Learning](https://towardsdatascience.com/cryptocurrency-price-prediction-using-deep-learning-70cfca50dd3a)
   
 #### Data Tools: (Put database link here)
 
@@ -57,7 +54,6 @@ Visual Studio Code, Jupyter Notebook, Github
 Python, Pandas, TensorFlow, Matplotlib, glob, Numpy
 Keras, Long Short-Term Memory (LSTM),
 Scikit-learn Library
-
 Dashboard: HTML, CSS (Bootstrap), Javascript, Flask.py
 
 ## The Process
@@ -147,7 +143,10 @@ Are there any particular trends that may be relevant?
 If none of the above are true for bull, bear, or neutral market criteria, then it is too difficult to predict the market type.
 
 ## Results
+### Difficulties
+
 
 
 ## Future Enhancements
-Coinmarketcap API to csv: https://stevesie.com/apps/coinmarketcap-api
+- Coinmarketcap API to csv: https://stevesie.com/apps/coinmarketcap-api
+- Increase number of cryptocurrencies supported
