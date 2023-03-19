@@ -248,11 +248,11 @@ def getmarkettype():
     btc6MonthPercentChange = ((btcCurrentPrice - btc6MonthsAgoPrice) / btc6MonthsAgoPrice) * 100
 
     # Determine market type based on rules
-    if btc3MonthPercentChange > 45 and btc6MonthPercentChange > 100:
+    if btc3MonthPercentChange > 70 and btc6MonthPercentChange > 150:
         marketTypeFinal = "Bull Market"
-    elif btc3MonthPercentChange < -45 and btc6MonthPercentChange < -60:
+    elif btc3MonthPercentChange < -40 and btc6MonthPercentChange < -60:
         marketTypeFinal = "Bear Market"
-    elif -45 <= btc3MonthPercentChange <= 45 and -60 <= btc6MonthPercentChange <= 60:
+    elif -70 <= btc3MonthPercentChange <= 70 and -150 <= btc6MonthPercentChange <= 150:
         marketTypeFinal = "Neutral Market"
     else:
         marketTypeFinal = "Market type is difficult to predict"
