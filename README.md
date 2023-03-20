@@ -64,9 +64,9 @@ Is it a good time to invest?
 Is it a good time to sell?  
 Are there any particular trends that may be relevant?
 
-#### Tasks Breakdown
-
-##### Aaron 
+### Tasks Breakdown
+_______________________________________________________________________________________________________________________________________________________________________
+### Aaron 
 [Read Me](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/README.md)
 - [Cleaned all 5 set of data](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/data_cleanup.ipynb)
 - Combined cleaned DataFrames into single DataFrame
@@ -79,8 +79,9 @@ Are there any particular trends that may be relevant?
 
 - Assisted in reviewing code, gathering images, dashboard
 
-##### Bobbi
-[Read Me](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Bobbi/information/BobbiREADME.md)
+_______________________________________________________________________________________________________________________________________________________________________
+### Bobbi
+[Read Me](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Bobbi/BobbiREADME.md)
 - [Created Initial Repository](https://github.com/bcolhour/TABD)
 - Created logo for Team
 - [Gather datasets](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/Resources)
@@ -98,7 +99,8 @@ Are there any particular trends that may be relevant?
 - Read Me & Project Template Layout
 - Assisted in reviewing code, dashboard
 
-##### David
+_______________________________________________________________________________________________________________________________________________________________________
+### David
 [ReadMe](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/README.md)
 - ERD
 - Time Series Research
@@ -114,7 +116,8 @@ Are there any particular trends that may be relevant?
 <img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/BTCPrediction.png" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/DogePrediction.png " width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/ETHPrediction.png " width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LTCPrediction.png " width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/XRPPrediction.png " width=50% height=50%>
 - Initialized ReadMe & Project Template Layout
 
-##### Tyler
+_______________________________________________________________________________________________________________________________________________________________________
+### Tyler
 [READ ME - Need to complete and insert link]("Insert Link"
 - [Create New Repository](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle)
 - Identify cryptos with 3 years history
@@ -141,6 +144,13 @@ Are there any particular trends that may be relevant?
 If none of the above are true for bull, bear, or neutral market criteria, then it is too difficult to predict the market type.
 
 ## Results
+### Machine Learning Data
+
+### Daily Trend Data
+It was interesting that while there are definite days that show mean price being higher or lower on defferent weekdays, it was different for each cryptocurrency. 
+
+![image](https://user-images.githubusercontent.com/114044192/226223059-65a04d35-e878-488b-a9dc-2c867315cb58.png)
+
 ### Difficulties
 Cryptocurrency prices can be volatile, and we encountered issues with noisy, missing, or incorrect data points. Some exchanges have different pricing formats so combining the data from different sources was challenging. LSTM models, in particular, are complex and tuning the hyperparameters to optimize performance and debugging any errors was time-consuming and difficult, whether it was preprocessing the data or running the actual model. We also ran to the issue of overfitting, where we obtained very good predictions with the testing set, but not so well on future, unseen data. Even trying to create visualizations and a dashboard that were both informative and visually appealing wasn't easy, especially because of our large datasets and complex models.
 
