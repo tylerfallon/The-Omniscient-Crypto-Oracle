@@ -151,7 +151,7 @@ If none of the above are true for bull, bear, or neutral market criteria, then i
 ### Daily Trend Data
 It was interesting that while there are definite days that show mean price being higher or lower on defferent weekdays, it was different for each cryptocurrency. 
 
-<img src="https://user-images.githubusercontent.com/114044192/226229143-086daa59-ae4b-4d16-a267-00bc3fd3d20d.png" width=50% height=50%>
+<img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/PricingTrendsbyWeekday.png" width=50% height=50%>
 
 ### Difficulties
 Cryptocurrency prices can be volatile, and we encountered issues with noisy, missing, or incorrect data points. Some exchanges have different pricing formats so combining the data from different sources was challenging. LSTM models, in particular, are complex and tuning the hyperparameters to optimize performance and debugging any errors was time-consuming and difficult, whether it was preprocessing the data or running the actual model. We also ran to the issue of overfitting, where we obtained very good predictions with the testing set, but not so well on future, unseen data. Even trying to create visualizations and a dashboard that were both informative and visually appealing wasn't easy, especially because of our large datasets and complex models.
