@@ -45,14 +45,16 @@ https://www.investopedia.com/
 * quickdatabasediagrams.com [ERD](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/QuickDBD-export.png)
 * [Machine Learning Model Codes](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David) 
 * [Daily Trend Code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/Code)
-* [Dashboard]
+* [Coindesk API](https://www.coindesk.com/tag/api/)
+* [Kraken API](https://www.kraken.com/features/api-trading)
+* [Coinbase API](https://help.coinbase.com/en/cloud/api/coinbase)
 
 #### Software: 
-Visual Studio Code, Jupyter Notebook, Github
+Visual Studio Code, Jupyter Notebook, Github, QuickDBD, Google Colab
 
 #### Modules/Libraries: 
-* Python, Pandas, TensorFlow, Matplotlib, glob, Numpy, Keras, Long Short-Term Memory (LSTM), Scikit-learn Library
-* Dashboard: HTML, CSS (Bootstrap framework), Javascript, Flask.py
+* Python, Pandas, TensorFlow, Matplotlib, glob, Numpy, Keras, Long Short-Term Memory (LSTM), Scikit-learn Library, DateTime
+* Dashboard: HTML, CSS (Bootstrap framework), Javascript, Flask.py, Requests
 
 ## The Process
 
@@ -149,13 +151,16 @@ If none of the above are true for bull, bear, or neutral market criteria, then i
 ### Daily Trend Data
 It was interesting that while there are definite days that show mean price being higher or lower on defferent weekdays, it was different for each cryptocurrency. 
 
-![image](https://user-images.githubusercontent.com/114044192/226223059-65a04d35-e878-488b-a9dc-2c867315cb58.png)
+<img src="https://user-images.githubusercontent.com/114044192/226229143-086daa59-ae4b-4d16-a267-00bc3fd3d20d.png" width=50% height=50%>
 
 ### Difficulties
 Cryptocurrency prices can be volatile, and we encountered issues with noisy, missing, or incorrect data points. Some exchanges have different pricing formats so combining the data from different sources was challenging. LSTM models, in particular, are complex and tuning the hyperparameters to optimize performance and debugging any errors was time-consuming and difficult, whether it was preprocessing the data or running the actual model. We also ran to the issue of overfitting, where we obtained very good predictions with the testing set, but not so well on future, unseen data. Even trying to create visualizations and a dashboard that were both informative and visually appealing wasn't easy, especially because of our large datasets and complex models.
 
 
 ## Future Enhancements
+- Add additional Cryptocurrencies
+- Link prediction model to API for real time info
+- Add a date input field for future predictions
 - Use a separate validation set: used to tune our model's hyperparameters and prevent overfitting
 - Use `Dropout`: randomly drops out some neurons during training to prevent overfitting
 - Use `Early Stopping`: stops training process when validation error stops improving to prevent overfitting
