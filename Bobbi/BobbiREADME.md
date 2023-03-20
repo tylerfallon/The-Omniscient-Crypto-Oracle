@@ -57,11 +57,11 @@ Completed research to find resources for using time series data for our dataset 
 Pulled basic definitions and graphics from Investopedia.com
 
 ##### Project Documents
-Formatted main ReadMe for group
-Formatted and populated Group Template
-Created PowerPoint for Presentation
+- Formatted main ReadMe for group
+- Formatted and populated Group Template
+- Created PowerPoint for Presentation
 
 ##### Team collaboration
-Assisted in rerunning ML code and saving as csv
-Took screenshots of MK Prediction graphics
-Outlining Presentation
+- Assisted in rerunning ML code and saving as csv
+- Took screenshots of MK Prediction graphics
+- Outlining Presentation
