@@ -109,6 +109,9 @@ ________________________________________________________________________________
 - Time Series Research
 - [Built Machine Learning model for all five crypocurrencies](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David):  The LSTM model used to predict cryptocurrency prices takes in historical data, including close prices, and feeds it through a neural network with three LSTM layers, each consisting of 50 neurons with the ReLU activation function.
 - Evaluated Model with various types of metrics for each cryptocurrency
+
+![image](https://user-images.githubusercontent.com/114044192/226487488-b13aafb0-eb98-42b4-b6a4-b34acc6007c4.png)
+
 - Created Visualizations from Matplotlib
 
 <img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Predicted%20vs.%20True%20Values%20Dogecoin.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Prediction%20Error%20Histogram%20Ethem.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Actual%20vs%20Predicted%20Bitcoin%20Prices.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Actual%20vs%20Predicted%20Ripple%20Rolling%20Mean.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Training%20and%20Validation%20Loss%20Litecoin.PNG" width=50% height=50%>
