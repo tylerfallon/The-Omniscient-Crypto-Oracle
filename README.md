@@ -104,19 +104,18 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________________________________________________________________________
 ### David
 [ReadMe](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/README.md)
-- ERD
+- Entity Relationship Diagram
+- Initialized ReadMe & Project Template Layout
 - Time Series Research
-- [Built Machine Learning model for all five crypocurrencies](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David):  The LSTM model used to predict cryptocurrency prices takes in historical data, including close prices, and feeds it through a neural network with three LSTM layers, each consisting of 50 neurons with the ReLU activation function. The input shape for the LSTM model should be a 3-dimensional array, where the first dimension is the number of samples, the second dimension is the number of time steps, and the third dimension is the number of features or variables in the input data.
-- Created Visualizations from Matplotlib
+- [Built Machine Learning model for all five crypocurrencies](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David):  The LSTM model used to predict cryptocurrency prices takes in historical data, including close prices, and feeds it through a neural network with three LSTM layers, each consisting of 50 neurons with the ReLU activation function.
 - Evaluated Model with various types of metrics for each cryptocurrency
+- Created Visualizations from Matplotlib
 
 <img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Predicted%20vs.%20True%20Values%20Dogecoin.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Prediction%20Error%20Histogram%20Ethem.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Actual%20vs%20Predicted%20Bitcoin%20Prices.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Actual%20vs%20Predicted%20Ripple%20Rolling%20Mean.PNG" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Training%20and%20Validation%20Loss%20Litecoin.PNG" width=50% height=50%>
 
-
-- Predicted Future Prices for all five cryptocurrencies: Overall, the LSTM model shows promising results in predicting future cryptocurrency prices. However, it is important to note that cryptocurrency prices are highly volatile and unpredictable, and the model's accuracy may vary depending on various factors such as market conditions, news events, and regulatory changes.
+- Predicted Future Prices for all five cryptocurrencies:
  
 <img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/BTCPrediction.png" width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/DogePrediction.png " width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/ETHPrediction.png " width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LTCPrediction.png " width=50% height=50%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/XRPPrediction.png " width=50% height=50%>
-- Initialized ReadMe & Project Template Layout
 
 _______________________________________________________________________________________________________________________________________________________________________
 ### Tyler
@@ -148,8 +147,16 @@ If none of the above are true for bull, bear, or neutral market criteria, then i
 ## Results
 ### Machine Learning Data
 
+<img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/Metrics.png" width=50% height=50%>
+
+MSE measures the average squared difference between the predicted and actual values. MAE measures the average absolute difference between the predicted and actual values. RMSE measures the square root of the average squared difference between the predicted and actual values. A smaller value for these metrics indicates better performance. In this case, the values of all coins for these metrics indicates that the model's predictions are close to the actual values.
+
+Coefficient of determination (r^2) measures the proportion of variance in the target variable (cryptocurrency prices) that can be explained by the model. The r^2 value of 0.9307 for Bitcoin, for example, indicates that the model explains 93.07% of the variance in the target variable, which is a high value and suggests that the model has captured the underlying patterns well. Dogecoin did have a lower value compared to the rest with 72.98%.
+
+While the metrics obtained from our LSTM model suggest good performance, it is important to consider the possibility of overfitting. Additionally, the accuracy of the predictions can be affected by various factors that may not have been captured by the model, such as sudden market changes, unexpected events, or changes in government regulations. Therefore, while the model can provide a useful tool for predicting future cryptocurrency prices, it's important to interpret the results with caution.
+
 ### Daily Trend Data
-It was interesting that while there are definite days that show mean price being higher or lower on defferent weekdays, it was different for each cryptocurrency. 
+It was interesting that while there are definite days that show mean price being higher or lower on different weekdays, it was different for each cryptocurrency. 
 
 <img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/PricingTrendsbyWeekday.png" width=50% height=50%>
 
