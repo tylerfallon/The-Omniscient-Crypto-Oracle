@@ -56,6 +56,12 @@ Completed research to find resources for using time series data for our dataset 
 ##### Definitions
 Pulled basic definitions and graphics from Investopedia.com
 
-##### Read Me & Project Template Layout
+##### Project Documents
 Formatted main ReadMe for group
 Formatted and populated Group Template
+Created PowerPoint for Presentation
+
+##### Team collaboration
+Assisted in rerunning ML code and saving as csv
+Took screenshots of MK Prediction graphics
+Outlining Presentation
