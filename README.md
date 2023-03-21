@@ -82,7 +82,7 @@ ________________________________________________________________________________
 - Time Series Research & Resources
 - Compiled definitions for Market Type analysis
 - Restructered main ReadMe & project template layout
-- Initialized our powerpoint presentation
+- Initialized our [powerpoint presentation](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/The%20Omniscient%20Crypto%20Oracle.pptx)
 - Assisted in reviewing code & the dashboard
 - Cleaned/Transformed our data for daily trend analysis. [Click here](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/Code) to view the code!
 - Created [line graphs](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/images) showing day of the week trends for each cryptocurrency
@@ -97,15 +97,16 @@ ________________________________________________________________________________
 ### David
 [Detailed ReadMe](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/README.md)
 
-- Entity Relationship Diagram
+- [Entity Relationship Diagram](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/QuickDBD-export.png)
 - Initialized ReadMe & Project Template Layout
 - Time Series Research
-- Edited final presentation and ReadMe formatting 
+- Edited [final presentation](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/The%20Omniscient%20Crypto%20Oracle.pptx) and ReadMe formatting 
 - Built Machine Learning model for all five crypocurrencies
 - Evaluated Model with various types of metrics for each cryptocurrency
-- Created Visualizations from Matplotlib to identify patterns or trends
+- Created [Visualizations from Matplotlib](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Aaron/Images) to identify patterns or trends
+- Exported predicion price DataFrames into suitable CSV formats
 - Assisted in reviewing code & the dashboard
-- To view all the deep machine learning coding, [click here!](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/David)
+- To view all the deep machine learning coding, select from: [Bitcoin](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Bitcoin.ipynb), [Ethereum](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Ethereum.ipynb), [Dogecoin](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Dogecoin.ipynb), [Litecoin](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Litecoin.ipynb), [Ripple](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Ripple.ipynb)
 
 <img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Predicted%20vs.%20True%20Values%20Dogecoin.PNG" width=40% height=40%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Prediction%20Error%20Histogram%20Ethem.PNG" width=40% height=40%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Actual%20vs%20Predicted%20Bitcoin%20Prices.PNG" width=40% height=40%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Actual%20vs%20Predicted%20Ripple%20Rolling%20Mean.PNG" width=40% height=40%><img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/Aaron/Images/Training%20and%20Validation%20Loss%20Litecoin.PNG" width=40% height=40%>
 
