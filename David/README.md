@@ -5,6 +5,16 @@
 
 This project aims to predict the future prices of five cryptocurrencies - Bitcoin, Ethereum, Dogecoin, Ripple, and Litecoin - using a Long Short-Term Memory (LSTM) model. The purpose of the project is to explore the potential of deep learning models in cryptocurrency price prediction.
 
+## Coding
+
+To see detailed coding for each machine learning model process, select from:
+
+* [Bitcoin LSTM Model code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Bitcoin.ipynb)
+* [Ethereum LSTM Model code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Ethereum.ipynb)
+* [Dogecoin LSTM Model code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Dogecoin.ipynb)
+* [Litecoin LSTM Model code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Litecoin.ipynb)
+* [Ripple LSTM Model code](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/LSTM-Model_Ripple.ipynb)
+
 ## Analysis:
 
 The project follows the following steps to create the LSTM model and predict future prices:
