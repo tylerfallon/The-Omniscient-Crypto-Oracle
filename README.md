@@ -82,7 +82,7 @@ ________________________________________________________________________________
 - Time Series Research & Resources
 - Compiled definitions for Market Type analysis
 - Restructered main ReadMe & project template layout
-- Initialized our [powerpoint presentation](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/The%20Omniscient%20Crypto%20Oracle.pptx)
+- Initialized & formatted our [powerpoint presentation](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/The%20Omniscient%20Crypto%20Oracle.pptx)
 - Assisted in reviewing code & the dashboard
 - Cleaned/Transformed our data for daily trend analysis. [Click here](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/Code) to view the code!
 - Created [line graphs](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/tree/main/Bobbi/images) showing day of the week trends for each cryptocurrency
@@ -97,7 +97,7 @@ ________________________________________________________________________________
 ### David
 [Detailed ReadMe](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/README.md)
 
-- [Entity Relationship Diagram](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/QuickDBD-export.png)
+- Created our initial [Entity Relationship Diagram](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/David/QuickDBD-export.png)
 - Initialized ReadMe & Project Template Layout
 - Time Series Research
 - Edited [final presentation](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/The%20Omniscient%20Crypto%20Oracle.pptx) and ReadMe formatting 
@@ -118,7 +118,7 @@ ________________________________________________________________________________
 ### Tyler
 [Detailed ReadMe - Need to complete and insert link]("Insert Link")
 
-- Created [New Repository](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle)
+- Created our [new Repository](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle)
 - Identified cryptocurrencies with at least three years history
 - Defined market type criteria
 - Mock up dashboard
