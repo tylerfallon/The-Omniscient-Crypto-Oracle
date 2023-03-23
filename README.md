@@ -125,6 +125,8 @@ ________________________________________________________________________________
 - Created Flask application with [app.py file](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/app.py)
 - Defined routes in app.py to send information to the frontend interface
 - Used several APIs to get real-time price data, percent change, and type of market on the frontend
+- Used HTML, CSS, and Javascript, along with the Bootstrap framework, to create the dashboard
+- Created the logic to calculate whether the market was a bull market, bear market, or neutral market, and ran the logic in realtime
 
 _______________________________________________________________________________________________________________________________________________________________________
 
