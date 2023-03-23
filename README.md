@@ -127,7 +127,14 @@ ________________________________________________________________________________
 - Used several APIs to get real-time price data, percent change, and type of market on the frontend
 - Used HTML, CSS, and Javascript, along with the Bootstrap framework, to create the dashboard
 - Created the logic to calculate whether the market was a bull market, bear market, or neutral market, and ran the logic in realtime
+
+The data for Bitcoin can be seen below:
 <img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/af2ad5251a4120eff2a83474fea02a2a6862e31e/tyler/assets/img/Screen%20Shot%202023-03-23%20at%202.21.52%20PM.png">
+
+Here is the data for Ethereum:
+<img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/af2ad5251a4120eff2a83474fea02a2a6862e31e/tyler/assets/img/Screen%20Shot%202023-03-23%20at%202.21.52%20PM.png">
+
+We also have dashboard sections for Dogecoin, Litecoin, and Ripple. 
 
 _______________________________________________________________________________________________________________________________________________________________________
 
