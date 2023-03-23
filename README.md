@@ -132,7 +132,7 @@ The data for Bitcoin can be seen below:
 <img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/af2ad5251a4120eff2a83474fea02a2a6862e31e/tyler/assets/img/Screen%20Shot%202023-03-23%20at%202.21.52%20PM.png">
 
 Here is the data for Ethereum:
-<img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/af2ad5251a4120eff2a83474fea02a2a6862e31e/tyler/assets/img/Screen%20Shot%202023-03-23%20at%202.21.52%20PM.png">
+<img src="https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/af2ad5251a4120eff2a83474fea02a2a6862e31e/tyler/assets/img/Screen%20Shot%202023-03-23%20at%202.21.52%20PM.png](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/tyler/assets/img/Screen%20Shot%202023-03-23%20at%202.27.06%20PM.png">
 
 We also have dashboard sections for Dogecoin, Litecoin, and Ripple. 
 
