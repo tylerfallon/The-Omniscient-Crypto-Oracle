@@ -116,12 +116,16 @@ ________________________________________________________________________________
 
 _______________________________________________________________________________________________________________________________________________________________________
 ### Tyler
-[Detailed ReadMe - Need to complete and insert link]("Insert Link")
+[Detailed ReadMe]
 
-- Created our [new Repository](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle)
-- Identified cryptocurrencies with at least three years history
+- Created our repository (https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle)
+- Identified cryptocurrencies with at least ten years history
 - Defined market type criteria
-- Mock up dashboard
+- Mocked up intial UI/UX for dashboard 
+- Created Flask application with [app.py file](https://github.com/tylerfallon/The-Omniscient-Crypto-Oracle/blob/main/app.py)
+- Defined routes in app.py to send information to the frontend interface
+- Used several APIs to get real-time price data, percent change, and type of market on the frontend
+
 _______________________________________________________________________________________________________________________________________________________________________
 
 ## Summary of Results
