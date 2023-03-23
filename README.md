@@ -9,6 +9,7 @@
 * David Oliver
 
 ## Introduction
+Everyone has heard of cryptocurrecny, but how many people understand it? Everyone wants in on the riches, but there is sooooo much contradictory data and nuances. What if we could provide an unbiased tool that explained in plain English if it is a good time to buy or sell based on market data and also had simple informative information about each cryptocurrency? We wanted to do this project because there is a lot of historcal data to analyze and it would be beneficial to everyday people who wanted to invest.
 
 The cryptocurrency market is a center of a lot of activity. It is a growing market with much potential and profit. Data science is used in cryptocurrency to forecast and predict the prices of these digital coins. This science is used to figure out what causes the changes in prices of the coins, and then indicates whether the prices will increase or decrease in the future. By focusing on market capitalization, or the coins' worth, one will predict how well or poorly a cryptocurrency will perform. 
 
